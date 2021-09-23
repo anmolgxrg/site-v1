@@ -1,143 +1,74 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Anmol Garg | CS Student | Frontend Developer | Designer</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" type="image/png" href="https://raw.githubusercontent.com/anmolgxrg/me/main/images/anmoji.png">
-<link href="stylesheet.css" type="text/css" rel="stylesheet">
-<!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-N62CNQ9');</script>
-<!-- End Google Tag Manager -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  background-image: url("dc.jpg");
+  min-height: 380px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+.btn {
+  background-color: #0000FF;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+</style>
 </head>
+
 <body>
-<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N62CNQ9"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-<div class="header">
-  <h1>Anmol Garg</h1>
-  <p>Manipal ICAS CS Class of 2023</p>
-  <button onclick="myFunction()">Dark mode</button>
- </div>
 
-<br>
+<div class="bg-img">
+  <form action="#" class="container">
+    <h1>Login</h1>
 
-<div class="row">
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
 
-  <div class="col-2 menu">
-    <ul>
-  <li class="tablinks" onclick="openCity(event, 'About')">About</li>
-  <li class="tablinks" onclick="openCity(event, 'Work')">Work</li>
-  <li class="tablinks" onclick="openCity(event, 'Contact')">Contact</li>
-    </ul>
-  </div>
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
 
-  <div class="col-10">
-    
-	<div id="About" class="tabcontent active">
-	<div class="col-8">
-	<h1>About</h1>
-    <p>Hi, I am Anmol and I am interested in Technology, Finance, and Design. Also, I deeply care about the environment and climate change.</p></div>
-	<div class="col-4">
-	<img src="images/about.png"  height="290px" width="360px"></div>
-    </div>
-  
-  	<div id="Work" class="tabcontent">
-	<div class="col-8">
-	<h1>Work</h1>
-    <p>Here are few examples of my work.</p></div>
-	<div class="col-4">
-	<img src="images/work.png"  height="200px" width="350px"></div><br><br>
-	<div class="rowt"> 
-  <div class="columnt">
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">    
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">
-  </div>
-  <div class="columnt">
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">    
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">
-  </div>  
-  <div class="columnt">
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">    
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">
-  </div>
-  <div class="columnt">
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">    
-    <img src="images/ayuvends.jpg" style="width:100%">
-    <img src="images/ayuvends.jpg" style="width:100%">
-  </div>
+    <button type="submit" class="btn">Login</button>
+  </form>
 </div>
-  <p> <i>images are subject to copyright</i></p>
-    </div>
-	
-	<div id="Contact" class="tabcontent">
-	<div class="col-8">
-	<h1>Contact</h1>
-    <p>Feel free to reach me through email or linkedin</p><br>
-	<ul>
-	<li>Email: a.anmolgarg@gmail.com</li><br>
-	<li><a href="https://www.linkedin.com/in/anmlgrg/">Linkedin</a></li>
-	</ul>
-	</div>
-	<div class="col-4">
-	<img src="images/contact.png"  height="300px" width="400px"></div><br><br>
-    </div>
-  
-  </div>
-
-  
-</div>
-
-<br><br><br>
-<br><br>
-
-<footer>
-<hr>
-<center><p>Made with ❤️ by Anmol Garg  © Copyright 2021, All Rights Reserved</p></center>
-</footer>
-
-
-<script>
-
-
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-
-function openCity(evt, cityName) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablinks");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(cityName).style.display = "block";
-  evt.currentTarget.className += " active";
-}
-</script>
 
 </body>
 </html>
